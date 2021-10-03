@@ -65,7 +65,6 @@ class Equation:
         print(self.x1)
         print(self.x2)
 
-
 if __name__ == "__main__":
     e = Equation("12x^2-34x+6")
     e.recognize()
