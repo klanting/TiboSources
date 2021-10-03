@@ -12,15 +12,16 @@ class Equation:
     def recognize(self):
         reference = []
         current = ""
+        i = self.input
         for token in self.format:
-            if token in self.input:
+            if token in i:
                 if token != "+":
                     current += token
             else:
                 if current != "":
                     reference.append(current)
+                    i = i.replace(current, "")
                     current = ""
-        print(reference)
 
         f_pend_index = 0
         i_pend_index = 0
@@ -49,7 +50,6 @@ class Equation:
 
         dict_value = int(dict_value)
         self.values.update({dict_key: dict_value})
-        print(self.values)
 
     def calculate(self):
         a = self.values.get("a", 0)
@@ -65,7 +65,9 @@ class Equation:
         print(self.x1)
         print(self.x2)
 
+
 if __name__ == "__main__":
     e = Equation("12x^2-34x+6")
     e.recognize()
     e.calculate()
+    e.display()
