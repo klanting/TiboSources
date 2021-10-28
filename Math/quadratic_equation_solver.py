@@ -65,6 +65,9 @@ class Equation:
         print(self.x1)
         print(self.x2)
 
+    def set_display(self, form):
+        self.format = form
+
 
 if __name__ == "__main__":
     e = Equation("12x^2-34x+6")
