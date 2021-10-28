@@ -8,9 +8,6 @@ back = box(pos=vector(0, 0, -5), length=10, width=.1, height=10, color=color.whi
 left = box(pos=vector(-5, 0, 0), length=.1, width=10, height=10, color=color.white)
 right = box(pos=vector(5, 0, 0), length=.1, width=10, height=10, color=color.white)
 
-differences = [0.4, 0.5, 0.2, 0, 0, 0]
-lst = [vector(0, 0, 0), vector(1, 0, 0)]
-
 core = sphere(radius=.75, color=color.orange, opacity=1)
 ring1 = ring(radius=1, length=.1, width=.1, height=.1, color=color.blue, opacity=1)
 ring2 = ring(radius=1, length=.1, width=.1, height=.1, color=color.blue, opacity=1)
