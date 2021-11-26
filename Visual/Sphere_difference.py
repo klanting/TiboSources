@@ -1,5 +1,4 @@
 from vpython import *
-from time import *
 import math
 import random
 
@@ -13,7 +12,7 @@ core = sphere(radius=.75, color=color.orange, opacity=1)
 
 
 def fibonacci_sphere(samples, dif):
-    points = []
+    pts = []
     phi = math.pi * (3. - math.sqrt(5.))
 
     for i in range(samples):
@@ -28,13 +27,14 @@ def fibonacci_sphere(samples, dif):
 
         y = y * (1 + dif[i])
 
-        points.append((x, y, z))
+        pts.append((x, y, z))
 
-    return points
+    return pts
 
 
 sphere_list = []
-difference = [random.random()/5 for i in range(1000)]
+
+difference = [random.random() for i in range(1000)]
 
 for point in fibonacci_sphere(len(difference), difference):
     sphere_list.append(sphere(pos=vector(point[0], point[1], point[2]), radius=.1, color=color.blue))
