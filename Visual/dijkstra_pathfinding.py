@@ -126,15 +126,6 @@ for i in range(25):
             v = map.junction_dis(a, b)
             map.road_add(a, b, v)
 
-"""map.junction_add((50, 80))
-
-map.junction_add((300, 50))
-
-map.junction_add((90, 100))
-
-map.road_add(sorted(map.junctions)[0], sorted(map.junctions)[2], random.randint(1, 100))
-map.road_add(sorted(map.junctions)[1], sorted(map.junctions)[2], random.randint(1, 100))
-"""
 
 c = random.choice(sorted(map.junctions))
 d = c
