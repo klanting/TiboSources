@@ -114,7 +114,7 @@ base_gen2 = [("X", "X"),
 living = [Life() for i in range(100)]
 index = 0
 
-index_lst = [i for i in range(2000)]
+index_lst = [i for i in range(1000)]
 score_lst = []
 m_lst = []
 w_lst = []
@@ -172,9 +172,8 @@ while run:
 
     index += 1
 
-    if index == 2000:
+    if index == 1000:
         run = False
-
 
     pygame.display.update()
 
