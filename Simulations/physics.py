@@ -8,6 +8,8 @@ class Particle:
         self.G = 6.674e-11
         self.pos = (0, 0)
         self.radius = 20
+        self.velocity = (0, 0)
+        self.acceleration = (0, 0)
 
     def Gravitation(self, p2):
         x1, y1 = self.pos

@@ -1,0 +1,39 @@
+.game_background {
+            height: 500px;
+            width: 500px;
+            background-color: gray;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+.player {
+            height: 25px;
+            width: 25px;
+            background-color: blue;
+            display: block;
+            margin-left: 0px;
+            margin-right: 0px;
+            left:100px;
+
+        }
+
+a:hover {
+    color: green;
+}
+
+/*sets color for an a than comes after an h2 in html*/
+h2 + a {
+    color red;
+}
+
+/*same as above, but in same parent*/
+h2 ~ a {
+    color red;
+}
+
+/*every a under parent h2*/
+h2 > a {
+    color red;
+}

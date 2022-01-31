@@ -6,7 +6,7 @@ width, height = 1920/2, 1080/2
 
 pygame.init()
 win = pygame.display.set_mode((width, height))
-pygame.display.set_caption("society")
+pygame.display.set_caption("flying_particle")
 
 
 def x_collide(x1, x2, radius):

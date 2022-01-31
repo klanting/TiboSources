@@ -329,7 +329,6 @@ while run:
         win.fill((0, 0, 0))
 
         "ticks"
-        u_col = False
 
         for a in Walls:
             a.move()
