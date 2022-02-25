@@ -1,5 +1,6 @@
 from vpython import *
 import math
+import time
 """needs pathfinding"""
 floor = box(pos=vector(0, -20, 0), length=40, width=40, height=.1, color=color.white)
 ceiling = box(pos=vector(0, 20, 0), length=40, width=40, height=.1, color=color.white)
@@ -57,3 +58,5 @@ for a in atoms:
     a.check_linked(atoms)
     a.draw_links()
 print(atoms[0].connected)
+
+Suit.dynamic_pathfinding(atoms, {atoms[0]: (4.5, 0, 4.5), atoms[1]: (3.0, 0, 3.0)})

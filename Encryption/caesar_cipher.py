@@ -45,6 +45,7 @@ def decrypt(string, value):
 
 
 if __name__ == '__main__':
-    new = encrypt("basic testing", 1)
-    new = decrypt(new, 1)
+    new = encrypt("abcdefghijklmnopqrstuvwxyz", 2)
+    print(new)
+    new = decrypt(new, 2)
     print(new)
