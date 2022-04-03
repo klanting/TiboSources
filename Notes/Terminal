@@ -1,0 +1,6 @@
+# see amount of code
+pygount --format=summary ./your-directory
+
+links
+gpu:
+https://gpu.userbenchmark.com/

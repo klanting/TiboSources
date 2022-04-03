@@ -7,7 +7,7 @@ win = pygame.display.set_mode((500, 500))
 pygame.display.set_caption("Survive The Box")
 
 
-class Utils():
+class Utils:
 
     @staticmethod
     def wall_generate(amount=10):
@@ -418,4 +418,3 @@ while run:
     pygame.display.update()
 
 pygame.quit()
-
