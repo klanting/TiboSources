@@ -59,4 +59,3 @@ for a in atoms:
     a.draw_links()
 print(atoms[0].connected)
 
-Suit.dynamic_pathfinding(atoms, {atoms[0]: (4.5, 0, 4.5), atoms[1]: (3.0, 0, 3.0)})

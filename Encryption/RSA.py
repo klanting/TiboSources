@@ -1,3 +1,4 @@
+import random
 from Math import number_theorie as nt
 import matplotlib.pyplot as pyplot
 import time
@@ -100,11 +101,27 @@ def gcd(a, b):
     while b != 0:
         a, b = b, a % b
     return a
-
+print(10**(40*14) % 55)
+p = 11
+q = 5
+n = p*q
+phi = (p-1)*(q-1)
+e = 17
+d = mi(e, phi)
+a = 10
+a = (a**e)
+a = (a**d) % n
+print(a)
+print((a**phi) % n)
+k = (e*d-1)/phi
+print("k", k)
+print(e*d)
+print(10**(int(k*phi)) % n)
+"""
 lst = []
 t_1 = 0
-for i in range(5, 1000000000):
-    print(1, i)
+for i in range(5, 100005):
+    #print(1, i)
     e = i-1
     while True:
         if gcd(e, i) == 1:
@@ -115,7 +132,7 @@ for i in range(5, 1000000000):
     te = time.perf_counter()
     lst.append(te-ts)
     t_1 += te-ts
-
+"""
 """
 lst_2 = []
 t_2 = 0
@@ -135,8 +152,8 @@ for i in range(5, 100000):
 print(t_1, t_2 )
 """
 #pyplot.plot(lst_2, color="b")
-pyplot.plot(lst, color="y")
-pyplot.show()
+#pyplot.plot(lst, color="y")
+#pyplot.show()
 
 #print(mi(3581, 4621))
 
